@@ -133,8 +133,7 @@ export class DemoMaterialModule {
     DemoMaterialModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    AppRoutingModule,
-    CommonModule
+    AppRoutingModule
   ],
   entryComponents: [ModalComponent],
   providers: [UserService],

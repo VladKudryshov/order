@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "order-frontend": {
+    "order": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",

@@ -12,8 +12,6 @@ import {ClientComponent} from './client/client.component';
 import {DashboardComponent} from './admin/dashboard/dashboard.component';
 
 
-
-
 const productsRoutes: Routes = [
   {path: 'details', component: InfoComponent}
 ];
