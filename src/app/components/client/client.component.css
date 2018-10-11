@@ -1,0 +1,105 @@
+.wrapper {
+  width: 100%;
+  border: 20px solid transparent;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+}
+
+div{
+  border-radius: 5px;
+}
+
+.header {
+  width: 100%;
+  background: #39414E;
+  padding: 10px;
+}
+
+.footer {
+  background: #39414E;
+  width: 100%;
+  height: 100px;
+}
+
+.cart{
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.shopping-cart{
+  padding: 5px;
+  width: 35px;
+  height: 30px;
+  position: relative;
+}
+
+.menu{
+  position: relative;
+  float: right;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+
+.menu > ul > li{
+  padding: 5px;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 900;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.menu > li:hover{
+  background: #202534;
+  text-shadow: 2px 2px 2px #000000;
+}
+.menu > li:hover >div{
+  display: block;
+}
+
+
+.quantity{
+  padding: 0;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 5px;
+  right: 5px;
+  font-size: 14px;
+  font-weight: 900;
+  text-align: center;
+  vertical-align: middle;
+  background: #ff2821;
+  color: #ffffff;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  border-radius: 45px;
+}
+
+
+.center{
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.right{
+  position: relative;
+  float: right;
+}
+
+.left{
+  position: relative;
+  float: left;
+}
+
+
+
+

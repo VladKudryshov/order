@@ -1,1 +1,109 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:200i&subset=greek,latin-ext');
+
+
+html {
+  font-family: 'Fira Sans Extra Condensed', sans-serif !important;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #f4f4f4;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+div{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+:focus{
+  outline: none;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+.center{
+  margin: 0 auto;
+}
+
+
+
+/*****************UTILS*****************/
+
+
+.wait{
+  border-left: 3px solid #cdc7c8;
+}
+
+.accept{
+  border-left: 3px solid #40bf34;
+}
+
+.discard{
+  border-left: 3px solid #bf2d3c;
+}
+
+.c-green{
+  color: #40bf34;
+}
+
+.c-red{
+  color: #bf2d3c;
+}
+
+.c-grey{
+  color: #cdc7c8;
+}
+
+.bg-green{
+  background: #40bf34;
+  color: #ffffff;
+}
+
+.bg-red{
+  background: #bf2d3c;
+  color: #ffffff;
+}
+
+.bg-grey{
+  background: #cdc7c8;
+  color: #ffffff;
+}
+.text-right {
+  text-align: right;
+}
+
+.right {
+  position: relative;
+  float: right;
+}
+
+.left {
+  position: relative;
+  float: left;
+}
+
+.clear-style-a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.vertical-center {
+  vertical-align: middle;
+}

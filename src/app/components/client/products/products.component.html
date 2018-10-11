@@ -1,0 +1,19 @@
+<div class="module-container">
+  <filter></filter>
+  <div class="items">
+    <mat-spinner *ngIf="loading" id="isLoadingSpinner" style="margin:0 auto;"></mat-spinner>
+    <div class="item" *ngFor="let product of products">
+      <div class="title">{{product.name}}</div>
+      <div class="image center"><img src="{{product.imgUrl}}" alt=""></div>
+      <div class="description">{{product.description}}</div>
+      <div class="price">{{currency(product.price)}}<br>{{product.dimension}}</div>
+      <div class="actions">
+        <button mat-raised-button class="btn-details left">Подробнее</button>
+        <button mat-raised-button (click)="openDialog(product)" class="btn-to-basket right">В корзину</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<router-outlet></router-outlet>

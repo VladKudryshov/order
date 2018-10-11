@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <div class="header">
+    <div class="user-meta text-right">
+      kudr9tov@gmail.com
+    </div>
+  </div>
+  <div class="panel">
+    <a class="panel-navigate" routerLinkActive="panel-navigate-active" routerLink="dashboard">Рабочий стол</a>
+     <a class="panel-navigate" routerLinkActive="panel-navigate-active" routerLink="orders">Заказы</a>
+     <a class="panel-navigate" routerLinkActive="panel-navigate-active" routerLink="products">Продукты</a>
+     <a class="panel-navigate" routerLinkActive="panel-navigate-active" routerLink="statistics">Статистика</a>
+     <a class="panel-navigate" routerLinkActive="panel-navigate-active" routerLink="settings">Настройки</a>
+  </div>
+  <div class="content">
+    <div class="route">
+      <ul type="/">
+        <li class="point-route "><a class="clear-style-a" routerLink="../">Account</a></li>
+        <li class="point-route active">{{getPlace()}}</li>
+      </ul>
+    </div>
+      <router-outlet></router-outlet>
+  </div>
+</div>

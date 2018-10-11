@@ -1,0 +1,90 @@
+.module-container {
+  display: grid;
+  grid-template-columns: 250px auto;
+}
+
+
+.items {
+  padding-left: 20px;
+  padding-right: 80px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr) );
+  grid-column-gap: 60px;
+  grid-row-gap: 20px;
+}
+
+.item{
+  background: #fff;
+  width: 100%;
+  min-width: 250px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.actions{
+  width: 100%;
+  padding: 10px 0;
+}
+
+.btn-to-basket{
+  background: #E34257;
+  color: #ffffff;
+  border: 0;
+  width: 46%;
+  border-radius: 5px;
+  margin: 0 2%;
+}
+
+.btn-details{
+  width: 46%;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 2%;
+}
+
+.title{
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.image{
+  background: #f4f4f4;
+  width: 180px;
+  height: 180px;
+}
+
+.image > img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.description{
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  overflow: hidden;
+  height: 55px;
+  font-size: 13px;
+  text-align: justify;
+}
+
+.price{
+  content: "";
+  position: absolute;
+  background: #FF5D49;
+  width: 100px;
+  top: 30px;
+  right: -50px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 25px;
+}
