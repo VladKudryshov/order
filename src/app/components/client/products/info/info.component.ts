@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {LogicalUtils} from '../../../utils/LogicalUtils';
+import {LogicalUtils} from '../../../../utils/LogicalUtils';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {FormatUtils} from '../../../utils/FormatUtils';
+import {FormatUtils} from '../../../../utils/FormatUtils';
 
 @Component({
   selector: 'app-info',

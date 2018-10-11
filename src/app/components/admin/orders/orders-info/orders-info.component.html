@@ -1,0 +1,67 @@
+<div class="order-item-info">
+  <div class="order-header"><h2 class="center">Order №0000001</h2></div>
+  <div class="order-meta">
+    <div class="user-meta left">
+      <table>
+        <tr>
+          <td><b>User:</b></td>
+          <td>Uladzislau</td>
+        </tr>
+        <tr>
+          <td><b>Phone:</b></td>
+          <td>+375 (33) 657-37-28</td>
+        </tr>
+        <tr>
+          <td><b>Email:</b></td>
+          <td>kudr9tov@gmail.com</td>
+        </tr>
+      </table>
+    </div>
+    <div class="user-address right">
+      <table>
+        <tr>
+          <td><b>City:</b></td>
+          <td>Uladzislau</td>
+        </tr>
+        <tr>
+          <td><b>Street:</b></td>
+          <td>Uladzislau</td>
+        </tr>
+        <tr>
+          <td><b>House:</b></td>
+          <td>+375 (33) 657-37-28</td>
+        </tr>
+        <tr>
+          <td><b>Flat:</b></td>
+          <td>kudr9tov@gmail.com</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="order-products">
+    <mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef> Название</mat-header-cell>
+        <mat-cell *matCellDef="let order"> {{order.name}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="sale">
+        <mat-header-cell *matHeaderCellDef> Скидка</mat-header-cell>
+        <mat-cell *matCellDef="let order"><mat-form-field>  <input matInput></mat-form-field> </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="quantity">
+        <mat-header-cell *matHeaderCellDef> Масса</mat-header-cell>
+        <mat-cell *matCellDef="let order"> {{order.weight}} {{order.dimension}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="totalPrice">
+        <mat-header-cell *matHeaderCellDef> Итого</mat-header-cell>
+        <mat-cell *matCellDef="let order"> {{currency(order.totalPrice)}}</mat-cell>
+      </ng-container>
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </div>
+  <div class="order-actions">
+    <button mat-raised-button class="bg-green">Подтвердить</button>
+    <button mat-raised-button class="bg-red">Отменить</button>
+  </div>
+</div>

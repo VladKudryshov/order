@@ -1,0 +1,36 @@
+/*****************ORDER*****************/
+.order-action {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-column-gap: 15px;
+}
+
+.order-list {
+  width: 100%;
+}
+
+.order-item {
+  width: 100%;
+  height: 30px;
+  padding: 5px 0;
+  cursor: pointer;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5px !important;
+  text-align: center;
+}
+
+.order-item:hover {
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+}
+
+
+.order-filter{
+  width: 100%;
+  height: 30px;
+  background: #ededed;
+  color: #dadada;
+  text-align: center;
+  padding: 4px;
+  font-weight: bold;
+}

@@ -1,0 +1,69 @@
+div{
+  border-radius: 0;
+}
+
+.order-item-info {
+  width: 100%;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 120px auto auto;
+}
+
+.order-header {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #5e6a8f;
+}
+
+.order-meta{
+  padding: 10px 100px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #5e6a8f;
+}
+
+.user-address{
+
+}
+
+.order-products{
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  background: #ededed;
+  color: #dadada;
+}
+.order-actions{
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+}
+
+.order-actions > button{
+  float: right;
+  margin-left: 10px;
+}
+
+.btn-order{
+  width: 50%;
+  height: 100%;
+  float: left;
+  border: 0;
+  cursor: pointer;
+  background: #e3e3e3;
+}
+
+.order-filter{
+  width: 100%;
+  height: 30px;
+  background: #ededed;
+  color: #dadada;
+  text-align: center;
+  padding: 4px;
+  font-weight: bold;
+}
+
+

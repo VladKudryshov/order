@@ -1,0 +1,78 @@
+/*MODAL*/
+.price{
+  background: #FF5D49;
+  color: #ffffff;
+  overflow: hidden;
+  font-weight: 900;
+  padding: 5px 10px;
+  justify-self: end;
+  text-align: center;
+}
+
+
+.title{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  font-weight: 900;
+  justify-self: start;
+  align-self: center;
+  float: left;
+}
+
+.description{
+  text-align: justify;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+
+.input-group{
+  float: left;
+  box-shadow: 0 0 2px 0.1px #000000;
+  border-radius: 0;
+}
+
+
+.input-group-append{
+  display: inline-block;
+}
+
+.custom-select {
+  background: #ffffff;
+  padding: 9px 5px;
+  width:50px;
+  border: 0;
+}
+
+
+.weight{
+  float: left;
+  width: 150px;
+  padding: 10px 5px;
+  border: 0;
+}
+
+.weight:focus{
+  padding: 10px 5px;
+}
+
+
+:focus{
+  outline: none;
+}
+
+.modal{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+
+.total-price{
+  justify-self: right;
+}
+
+
+

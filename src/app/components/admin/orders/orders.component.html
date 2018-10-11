@@ -1,0 +1,10 @@
+<div class="order-action">
+
+  <div class="order-list">
+    <div class="order-filter">
+      FILTER
+    </div>
+    <div class="order-item vertical-center wait" *ngFor="let order of orderIds" (click)="print(order)">№{{order}}</div>
+  </div>
+  <app-orders-info *ngIf="showDetails" [order] = "order" ></app-orders-info>
+</div>

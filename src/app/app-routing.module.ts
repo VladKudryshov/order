@@ -1,15 +1,15 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {InfoComponent} from './info/info.component';
-import {AdminComponent} from './admin/admin.component';
-import {StatisticsComponent} from './statistics/statistics.component';
-import {CartComponent} from './cart/cart.component';
-import {DataProductComponent} from './data-product/data-product.component';
-import {SettingsComponent} from './settings/settings.component';
-import {ProductsComponent} from './products/products.component';
-import {OrdersComponent} from './orders/orders.component';
-import {ClientComponent} from './client/client.component';
-import {DashboardComponent} from './dashboard/dashboard.component';
+import {InfoComponent} from './components/client/products/info/info.component';
+import {AdminComponent} from './components/admin/admin.component';
+import {StatisticsComponent} from './components/admin/statistics/statistics.component';
+import {CartComponent} from './components/client/cart/cart.component';
+import {DataProductComponent} from './components/admin/data-product/data-product.component';
+import {SettingsComponent} from './components/admin/settings/settings.component';
+import {ProductsComponent} from './components/client/products/products.component';
+import {OrdersComponent} from './components/admin/orders/orders.component';
+import {ClientComponent} from './components/client/client.component';
+import {DashboardComponent} from './components/admin/dashboard/dashboard.component';
 
 
 const productsRoutes: Routes = [
