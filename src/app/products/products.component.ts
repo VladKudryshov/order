@@ -1,9 +1,9 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {MatDialog} from '@angular/material';
-import {FormatUtils} from '../../utils/FormatUtils';
-import {Product} from '../../model/product';
-import {ModalComponent} from './modal/modal.component';
+import {FormatUtils} from '../utils/FormatUtils';
+import {Product} from '../model/product';
+import {ModalComponent} from '../modal/modal.component';
 
 @Component({
   selector: 'products',
