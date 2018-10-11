@@ -10,11 +10,6 @@ import {ProductsComponent} from './products/products.component';
 import {OrdersComponent} from './orders/orders.component';
 import {ClientComponent} from './client/client.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
-<<<<<<< 529365e6987df3380de391d42cb5520ea2955a56
-
-
-=======
->>>>>>> init
 
 
 const productsRoutes: Routes = [
