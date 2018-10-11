@@ -3,7 +3,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import {MatTableDataSource} from '@angular/material';
 import {SelectionModel} from '@angular/cdk/collections';
-import {FormatUtils} from '../../../utils/FormatUtils';
+import {FormatUtils} from '../../utils/FormatUtils';
 
 
 export interface tableProduct {

@@ -1,16 +1,16 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {InfoComponent} from './components/client/products/info/info.component';
-import {AppComponent} from './app.component';
-import {CartComponent} from './components/client/cart/cart.component';
-import {ClientComponent} from './components/client/client.component';
-import {AdminComponent} from './components/admin/admin.component';
-import {ProductsComponent} from './components/client/products/products.component';
-import {OrdersComponent} from './components/admin/orders/orders.component';
-import {DashboardComponent} from './components/admin/dashboard/dashboard.component';
-import {DataProductComponent} from './components/admin/data-product/data-product.component';
-import {StatisticsComponent} from './components/admin/statistics/statistics.component';
-import {SettingsComponent} from './components/admin/settings/settings.component';
+import {InfoComponent} from './client/products/info/info.component';
+import {AdminComponent} from './admin/admin.component';
+import {StatisticsComponent} from './admin/statistics/statistics.component';
+import {CartComponent} from './client/cart/cart.component';
+import {DataProductComponent} from './admin/data-product/data-product.component';
+import {SettingsComponent} from './admin/settings/settings.component';
+import {ProductsComponent} from './client/products/products.component';
+import {OrdersComponent} from './admin/orders/orders.component';
+import {ClientComponent} from './client/client.component';
+import {DashboardComponent} from './admin/dashboard/dashboard.component';
+
 
 
 
