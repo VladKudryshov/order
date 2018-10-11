@@ -1,15 +1,20 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {InfoComponent} from './client/products/info/info.component';
+import {InfoComponent} from './info/info.component';
 import {AdminComponent} from './admin/admin.component';
-import {StatisticsComponent} from './admin/statistics/statistics.component';
-import {CartComponent} from './client/cart/cart.component';
-import {DataProductComponent} from './admin/data-product/data-product.component';
-import {SettingsComponent} from './admin/settings/settings.component';
-import {ProductsComponent} from './client/products/products.component';
-import {OrdersComponent} from './admin/orders/orders.component';
+import {StatisticsComponent} from './statistics/statistics.component';
+import {CartComponent} from './cart/cart.component';
+import {DataProductComponent} from './data-product/data-product.component';
+import {SettingsComponent} from './settings/settings.component';
+import {ProductsComponent} from './products/products.component';
+import {OrdersComponent} from './orders/orders.component';
 import {ClientComponent} from './client/client.component';
-import {DashboardComponent} from './admin/dashboard/dashboard.component';
+import {DashboardComponent} from './dashboard/dashboard.component';
+<<<<<<< 529365e6987df3380de391d42cb5520ea2955a56
+
+
+=======
+>>>>>>> init
 
 
 const productsRoutes: Routes = [
