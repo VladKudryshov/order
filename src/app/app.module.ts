@@ -46,21 +46,21 @@ import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
 import {CommonModule, isPlatformBrowser} from '@angular/common';
 import {AppRoutingModule} from './app-routing.module';
-import {AdminComponent} from './components/admin/admin.component';
-import {CartComponent} from './components/client/cart/cart.component';
-import {ClientComponent} from './components/client/client.component';
-import {InfoComponent} from './components/client/products/info/info.component';
-import {ProductsComponent} from './components/client/products/products.component';
-import {FilterComponent} from './components/client/products/filter/filter.component';
-import {ModalComponent} from './components/client/products/modal/modal.component';
-import {OrdersComponent} from './components/admin/orders/orders.component';
-import {OrdersInfoComponent} from './components/admin/orders/orders-info/orders-info.component';
-import {DashboardComponent} from './components/admin/dashboard/dashboard.component';
 import {StatisticsComponent} from './components/admin/statistics/statistics.component';
-import {SettingsComponent} from './components/admin/settings/settings.component';
-import {DataProductComponent} from './components/admin/data-product/data-product.component';
-import { BreadcrumbComponent } from './components/admin/breadcrumb/breadcrumb.component';
+import {InfoComponent} from './components/client/products/info/info.component';
 import {UserService} from './components/admin/orders/orders-info/orders-info.service';
+import {CartComponent} from './components/client/cart/cart.component';
+import {FilterComponent} from './components/client/products/filter/filter.component';
+import {DataProductComponent} from './components/admin/data-product/data-product.component';
+import {ClientComponent} from './components/client/client.component';
+import {OrdersComponent} from './components/admin/orders/orders.component';
+import {AdminComponent} from './components/admin/admin.component';
+import {OrdersInfoComponent} from './components/admin/orders/orders-info/orders-info.component';
+import {SettingsComponent} from './components/admin/settings/settings.component';
+import {ProductsComponent} from './components/client/products/products.component';
+import {ModalComponent} from './components/client/products/modal/modal.component';
+import {DashboardComponent} from './components/admin/dashboard/dashboard.component';
+
 
 @NgModule({
   exports: [
@@ -101,8 +101,7 @@ import {UserService} from './components/admin/orders/orders-info/orders-info.ser
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
-  ],
-  declarations: [BreadcrumbComponent]
+  ]
 })
 export class DemoMaterialModule {
 }
