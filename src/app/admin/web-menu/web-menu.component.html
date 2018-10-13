@@ -1,0 +1,114 @@
+<mat-list class="header">
+    <mat-list-item class="title-shop" color="primary">
+        <mat-icon>star_border</mat-icon>
+        <span>SHOP</span>
+    </mat-list-item>
+    <mat-list-item>
+        <mat-icon>security</mat-icon>
+        <p class="text-color" mat-line>Shop Administration</p>
+    </mat-list-item>
+</mat-list>
+<mat-list class="primary-menu">
+    <!--Dashboard Item-->
+    <mat-list-item
+        class="dashboard-menu-item"
+        [routerLink]="['dashboard']">
+        <mat-icon 
+            mat-list-icon
+            [matTooltip]="'DASHBOARD'"
+            [matTooltipPosition]="'right'"
+        >dashboard</mat-icon>
+        <p mat-line class="dashboard-menu-label">DASHBOARD</p>
+    </mat-list-item>
+
+    <!--Accounts Item-->
+    <mat-list-item
+        class="accounts-menu-item"
+        [routerLink]="['orders']">
+        <mat-icon 
+            mat-list-icon
+            [matTooltip]="'ACCOUNTS'"
+            [matTooltipPosition]="'right'"
+        >folder_shared</mat-icon>
+        <p mat-line class="accounts-menu-label">Orders</p>
+    </mat-list-item>
+
+    <!--Organizations Item-->
+    <mat-list-item
+        class="organizations-menu-item"
+        [routerLink]="['organizations']"
+    >
+        <mat-icon
+            mat-list-icon
+            [matTooltip]="'ORGANIZATIONS'"
+            [matTooltipPosition]="'right'"
+        >bubble_chart</mat-icon>
+        <p mat-line class="organizations-menu-label">ORGANIZATIONS</p>
+    </mat-list-item>
+
+    <!--Programs Item-->
+    <mat-list-item
+        class="programs-menu-item"
+        [routerLink]="['programs']"
+    >
+        <mat-icon
+            mat-list-icon
+            [matTooltip]="'PROGRAMS'"
+            [matTooltipPosition]="'right'"
+        >lens</mat-icon>
+        <p mat-line class="programs-menu-label">PROGRAMS</p>
+    </mat-list-item>
+
+    <!--Users Item-->
+    <mat-list-item
+        class="users-menu-item"
+        [routerLink]="['users']"
+    >
+        <mat-icon
+            mat-list-icon
+            [matTooltip]="'USERS'"
+            [matTooltipPosition]="'right'"
+        >account_circle</mat-icon>
+        <p mat-line class="users-menu-label">USERS</p>
+    </mat-list-item>
+
+    <!--Program Templates Item-->
+    <mat-list-item
+        class="templates-menu-item"    
+        [routerLink]="['program-templates']"
+    >
+        <mat-icon
+            mat-list-icon
+            [matTooltip]="'TEMPLATES'"
+            [matTooltipPosition]="'right'"
+        >flip</mat-icon>
+        <p mat-line class="templates-menu-label">TEMPLATES</p>
+    </mat-list-item>
+
+    <!--Organization Types Item-->
+    <mat-list-item
+        class="types-menu-item"
+        [routerLink]="['organization-types']"
+    >
+        <mat-icon
+            mat-list-icon
+            [matTooltip]="'ORGANIZATIONS'"
+            [matTooltipPosition]="'right'"
+        >label</mat-icon>
+        <p mat-line class="types-menu-label">ORGANIZATIONS</p>
+    </mat-list-item>
+
+    <!--Mobile Operators Item-->
+    <mat-list-item
+        class="operators-menu-item"
+        [routerLink]="['mobile-operators']"
+    >
+        <mat-icon
+            mat-list-icon
+            [matTooltip]="'MOBILE_OPERATORS'"
+            [matTooltipPosition]="'right'"
+        >phone_iphone</mat-icon>
+        <p mat-line class="operators-menu-label">MOBILE OPERATORS'</p>
+    </mat-list-item>
+
+</mat-list>

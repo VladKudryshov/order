@@ -1,15 +1,15 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {InfoComponent} from './components/client/products/info/info.component';
-import {AdminComponent} from './components/admin/admin.component';
-import {StatisticsComponent} from './components/admin/statistics/statistics.component';
-import {CartComponent} from './components/client/cart/cart.component';
-import {DataProductComponent} from './components/admin/data-product/data-product.component';
-import {SettingsComponent} from './components/admin/settings/settings.component';
-import {ProductsComponent} from './components/client/products/products.component';
-import {OrdersComponent} from './components/admin/orders/orders.component';
-import {ClientComponent} from './components/client/client.component';
-import {DashboardComponent} from './components/admin/dashboard/dashboard.component';
+import {InfoComponent} from './client/products/info/info.component';
+import {AdminComponent} from './admin/views/admin.component';
+import {StatisticsComponent} from './admin/components/statistics/statistics.component';
+import {CartComponent} from './client/cart/cart.component';
+import {DataProductComponent} from './admin/components/data-product/data-product.component';
+import {SettingsComponent} from './admin/components/settings/settings.component';
+import {ProductsComponent} from './client/products/products.component';
+import {OrdersComponent} from './admin/components/orders/orders.component';
+import {ClientComponent} from './client/client.component';
+import {DashboardComponent} from './admin/components/dashboard/dashboard.component';
 
 
 const productsRoutes: Routes = [
@@ -39,7 +39,7 @@ const routes: Routes = [
 
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
+  imports: [ RouterModule.forRoot(routes, { useHash: true }) ],
   exports: [ RouterModule ]
 })
 export class AppRoutingModule {}

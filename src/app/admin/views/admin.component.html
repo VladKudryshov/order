@@ -1,0 +1,71 @@
+
+<div class="app">
+  <mat-sidenav-container class="example-container">
+      <mat-sidenav mode="side" opened>
+        <web-menu>
+
+        </web-menu>
+      </mat-sidenav>
+
+      <mat-sidenav-content>
+          <mat-toolbar color="primary">
+              <mat-toolbar-row>
+                <div class="example-sidenav-content">
+                </div>
+                <button mat-icon-button [matMenuTriggerFor]="menu">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+              </mat-toolbar-row>
+        </mat-toolbar>
+          <router-outlet></router-outlet>
+      </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span> kudr9tov@gmail.com</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voicemail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+
+  <!-- <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <div class="example-sidenav-content">
+              <mat-icon>star_border</mat-icon>
+              <span>AdminKa</span>
+          </div>
+          <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+        </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-drawer-container class="example-container" autosize>
+    
+    <mat-drawer mode="side" opened>
+      <a class="panel-navigate" routerLinkActive="panel-navigate-active" routerLink="dashboard">Рабочий стол</a>
+      <a class="panel-navigate" routerLinkActive="panel-navigate-active" routerLink="orders">Заказы</a>
+      <a class="panel-navigate" routerLinkActive="panel-navigate-active" routerLink="products">Продукты</a>
+      <a class="panel-navigate" routerLinkActive="panel-navigate-active" routerLink="statistics">Статистика</a>
+      <a class="panel-navigate" routerLinkActive="panel-navigate-active" routerLink="settings">Настройки</a>
+      
+    </mat-drawer>
+
+    <mat-drawer-content>    
+        <img src="https://cdn-images-1.medium.com/max/690/0*HgXG6QR-z5P-wCkj.png">
+    <div class="footer"></div>
+
+   </mat-drawer-content>
+
+
+
+  </mat-drawer-container> -->
+
+</div>

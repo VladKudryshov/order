@@ -129,4 +129,33 @@ div {
   color: #5e6a8f;
 }
 
+.mat-toolbar-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example-container {
+  margin: 10px;
+
+}
+.mat-drawer {
+  width: 200px;
+}
+.mat-drawer-container {
+  height: 650px;
+}
+.mat-drawer-content {
+  margin-left: 200px;
+}
+.app { 
+  display: flex; 
+  flex-direction: row; 
+  width: 100%; 
+  height: 100%; 
+}
+   
+.mat-drawer-container { 
+  width: 100%;
+}
+
 
