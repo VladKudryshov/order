@@ -1,8 +1,8 @@
 import {Component, Inject, OnInit} from '@angular/core';
-import {FormatUtils} from '../../../../utils/FormatUtils';
+import {FormatUtils} from '../../../utils/FormatUtils';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
-import {Product} from '../../../../model/product';
-import {LogicalUtils} from '../../../../utils/LogicalUtils';
+import {Product} from '../../../model/product';
+import {LogicalUtils} from '../../../utils/LogicalUtils';
 
 @Component({
   selector: 'modal',

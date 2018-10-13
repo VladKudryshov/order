@@ -1,8 +1,7 @@
-import {Component, Input, OnInit, ViewChild} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {FormatUtils} from '../../../../utils/FormatUtils';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {LogicalUtils} from '../../../../utils/LogicalUtils';
-import {MatSort, MatTableDataSource} from '@angular/material';
 import {DataSource} from '@angular/cdk/table';
 import {UserService} from './orders-info.service';
 import {Observable} from 'rxjs';

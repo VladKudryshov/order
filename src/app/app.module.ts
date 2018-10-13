@@ -36,7 +36,7 @@ import {
   MatTabsModule,
   MatToolbarModule,
   MatTooltipModule,
-  MatTreeModule,
+  MatTreeModule
 } from '@angular/material';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -44,22 +44,15 @@ import {AppComponent} from './app.component';
 import {RouterModule} from '@angular/router';
 import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
-import {CommonModule, isPlatformBrowser} from '@angular/common';
+import {isPlatformBrowser} from '@angular/common';
 import {AppRoutingModule} from './app-routing.module';
-import {StatisticsComponent} from './components/admin/statistics/statistics.component';
-import {InfoComponent} from './components/client/products/info/info.component';
-import {UserService} from './components/admin/orders/orders-info/orders-info.service';
-import {CartComponent} from './components/client/cart/cart.component';
-import {FilterComponent} from './components/client/products/filter/filter.component';
-import {DataProductComponent} from './components/admin/data-product/data-product.component';
-import {ClientComponent} from './components/client/client.component';
-import {OrdersComponent} from './components/admin/orders/orders.component';
-import {AdminComponent} from './components/admin/admin.component';
-import {OrdersInfoComponent} from './components/admin/orders/orders-info/orders-info.component';
-import {SettingsComponent} from './components/admin/settings/settings.component';
-import {ProductsComponent} from './components/client/products/products.component';
-import {ModalComponent} from './components/client/products/modal/modal.component';
-import {DashboardComponent} from './components/admin/dashboard/dashboard.component';
+import {InfoComponent} from './client/products/info/info.component';
+import {CartComponent} from './client/cart/cart.component';
+import {FilterComponent} from './client/products/filter/filter.component';
+import {ClientComponent} from './client/client.component';
+import {ProductsComponent} from './client/products/products.component';
+import {ModalComponent} from './client/products/modal/modal.component';
+import { AdminModule } from './admin/admin.module';
 
 
 @NgModule({
@@ -110,23 +103,17 @@ export class DemoMaterialModule {
   declarations: [
     AppComponent,
     ProductsComponent,
-    AdminComponent,
     CartComponent,
     ClientComponent,
     InfoComponent,
     FilterComponent,
-    ModalComponent,
-    OrdersComponent,
-    OrdersInfoComponent,
-    DashboardComponent,
-    StatisticsComponent,
-    SettingsComponent,
-    DataProductComponent
+    ModalComponent
   ],
   imports: [
     BrowserModule.withServerTransition({
       appId: 'ng-universal-demystified'
     }),
+    AdminModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
@@ -136,9 +123,12 @@ export class DemoMaterialModule {
     AppRoutingModule
   ],
   entryComponents: [ModalComponent],
-  providers: [UserService],
+  
   bootstrap: [AppComponent],
-  exports: [RouterModule]
+  exports: [
+    RouterModule,
+    AdminModule
+  ]
 })
 export class AppModule {
 
