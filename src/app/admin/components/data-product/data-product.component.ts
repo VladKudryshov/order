@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-data-product',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./data-product.component.css']
 })
 export class DataProductComponent implements OnInit {
+
+  panelColor = new FormControl('name');
 
   constructor() { }
 

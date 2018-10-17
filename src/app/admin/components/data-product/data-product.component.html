@@ -1,3 +1,54 @@
-<p>
-  data-product works!
-</p>
+<div class="actions">
+  <mat-card>
+    <mat-form-field>
+      <mat-select placeholder="Тип поика" class="product-search">
+        <mat-option value="name">Название продукта</mat-option>
+        <mat-option value="category">Категория</mat-option>
+        <mat-option value="tag">Tag</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="input">
+      <input matInput placeholder="Search" >
+    </mat-form-field>
+    <button mat-raised-button><mat-icon>search</mat-icon></button>
+    <button mat-raised-button class="btn-products"><mat-icon>add</mat-icon></button>
+    <button mat-raised-button class="btn-products"><mat-icon>edit</mat-icon></button>
+    <button mat-raised-button class="btn-products"><mat-icon>delete</mat-icon></button>
+    <button mat-raised-button class="btn-products"><mat-icon>save</mat-icon></button>
+  </mat-card>
+</div>
+<div class="products-action">
+  <div class="product-cart">
+    <div class="title center">Product</div>
+    <div class="image center"></div>
+    <div class="meta-info">
+      <table>
+        <tr>
+          <td><b>Category:</b></td>
+          <td>cat</td>
+        </tr>
+        <tr>
+          <td><b>Tag:</b></td>
+          <td><a href="">as,asd,ar</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="product-cart">
+    <div class="title center">Product</div>
+    <div class="image center"></div>
+    <div class="meta-info">
+      <table>
+        <tr>
+          <td><b>Category:</b></td>
+          <td>cat</td>
+        </tr>
+        <tr>
+          <td><b>Tag:</b></td>
+          <td><a href="">as,asd,ar</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</div>
